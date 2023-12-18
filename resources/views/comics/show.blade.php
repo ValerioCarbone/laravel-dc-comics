@@ -12,7 +12,7 @@
                     <p class="card-text">Series: {{ $comic->series }}</p>
                     <p class="card-text">Type: {{ $comic->type }}</p>
                     <p class="card-text">Sale date: {{ $comic->sale_date }}</p>
-                    <p class="card-text">Price: {{ $comic->price }}</p>
+                    <p class="card-text">Price: {{ $comic->price }}$</p>
                     <p class="card-text">{{ $comic->description }}</p>
                 </div>
             </div>
