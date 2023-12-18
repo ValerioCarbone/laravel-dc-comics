@@ -13,10 +13,13 @@
             @foreach ($comics as $comic)
                 <div class="col-3">
                     <div class="card">
-                        <img class="img-fluid" src={{ $comic->src }}>
+                        <a href="{{ route('comics.show', $comic) }}">
+                            <img class="img-fluid" src={{ $comic->src }}>
+                        </a>
                         <div class="card-body">
                             <h3>{{ $comic->title }}</h3>
-                            <p class="card-text">{{ $comic->description }}</p>
+                            <p class="card-text">{{ $comic->series }}</p>
+                            <p class="card-text">{{ $comic->type }}</p>
                         </div>
                     </div>
                 </div>
