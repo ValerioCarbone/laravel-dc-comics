@@ -14,7 +14,7 @@
                 <div class="col-3">
                     <div class="card">
                         <a href="{{ route('comics.show', $comic) }}">
-                            <img class="img-fluid" src={{ $comic->src }}>
+                            <img style="width: 100%;" class="img-fluid" src={{ $comic->src }}>
                         </a>
                         <div class="card-body">
                             <h3>{{ $comic->title }}</h3>
