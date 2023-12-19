@@ -5,6 +5,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
+            <a href="{{ route('comics.index') }}" class=" text-center my-3 btn-sm btn-secondary">Home</a>
             <div class="card" style ="width: 600px;">
                 <img src={{ $comic->src }} class="card-img-top">
                 <div class="card-body">
