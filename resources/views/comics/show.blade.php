@@ -32,13 +32,15 @@
     <div class="modal fade" id="deleteModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <form action="{{ route('comics.destroy', $comic) }}" method="POST" class="d-flex flex-column">
-                    @csrf
-                    @method('DELETE')
-                    <label for="delete" class="text-center my-4">Are you sure to delete this item?</label>
-                    <input type="submit" id="delete" value="Delete"
-                        class="btn btn-sm btn-primary align-self-center mb-4">
-                </form>
+                <div class="container">
+                    <form action="{{ route('comics.destroy', $comic) }}" method="POST" class="d-flex flex-column">
+                        @csrf
+                        @method('DELETE')
+                        <label for="delete" class="text-center my-4">Are you sure to delete this item?</label>
+                        <input type="submit" id="delete" value="Delete"
+                            class="btn btn-sm btn-primary align-self-center mb-4">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
